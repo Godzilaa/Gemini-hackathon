@@ -1,14 +1,15 @@
-"use client"
 
-import dynamic from "next/dynamic";
-import { use } from "react";
+import { Sidebar } from "@/components/sidebar/Sidebar"
+import Map from "@/components/maps"
 
-const Map = dynamic(() => import("@/components/maps"), { ssr: false });
 
 export default function Home() {
   return (
-    <main>
-      <Map />
-    </main>
-  );
+    <div className="h-screen bg-white">
+      <Sidebar />
+      <main className="h-screen md:ml-[320px] lg:ml-[384px]">
+        <Map />
+      </main>
+    </div>
+  )
 }
