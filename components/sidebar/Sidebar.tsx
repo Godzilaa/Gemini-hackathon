@@ -248,7 +248,7 @@ function SidebarContent() {
     <div className="flex flex-col h-full bg-white text-black">
       {/* Header */}
       <div className="p-6 border-b-2 border-black">
-        <h1 className="text-2xl font-bold uppercase tracking-tight mb-4">🤖 AI TRAVEL ASSISTANT</h1>
+        <h1 className="text-2xl font-bold uppercase tracking-tight mb-4">🤖 AI  ASSISTANT</h1>
         <div className="flex gap-2">
           <Button 
             onClick={clearChat}
